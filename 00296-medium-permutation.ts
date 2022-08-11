@@ -11,3 +11,4 @@ type cases = [
 
 // ============= Your Code Here =============
 type Permutation<T, U = T> = [T] extends [never] ? []: T extends U ? [T, ...Permutation<Exclude<U, T>>] : []
+// ref: https://juejin.cn/post/7113724383666896933
